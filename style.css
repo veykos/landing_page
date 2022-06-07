@@ -2,8 +2,11 @@ body {
     font-family: Arial, sans-serif;
     background-color: aliceblue;
     margin: 0;
-    min-height: 100vh;
-}
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex:1;
+} 
 li {
     list-style: none;
     text-decoration: none;
@@ -15,12 +18,12 @@ a:link {
 
 .header {
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: #1F2937;
     color: #f9faf8;
     font-size:24px;
-    padding: 0 50px;
+    padding: 0 100px;
 }
 
 .header_links {
@@ -32,15 +35,16 @@ a:link {
 
 .under-header .image {
     display:block;
-    width:350px;
+    width:auto;
+    height:200px;;
     flex: 0;
 }
 
 .under-header {
     display:flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px 100px;
     background-color: #1F2937;
     color:#f9faf8
 }
@@ -48,6 +52,68 @@ a:link {
 .left_pane {
     display:flex;
     flex-direction: column;
+    justify-content: center; 
     flex: 0;
     margin-right: 20px;
+    gap: 10px;
+}
+
+h1, p {
+    margin:0;
+}
+
+.main_body {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+}
+
+.body1 {
+    display:flex;
+    flex:auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0px;
+    gap:25px;
+    height: 200px;
+}
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: aliceblue;
+    border: 3px solid rgb(85, 159, 243);
+    border-radius: 12px;
+  }
+
+.card_holder {
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+}
+.square_holder {
+    display:flex;
+    gap: 30px;
+}
+
+.body2 {
+    flex:auto;
+    height: 200px;
+    background-color: lightgray;
+}
+
+
+
+
+.footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color:#f9faf8;
+    height: 40px;
 }
