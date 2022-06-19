@@ -23,7 +23,11 @@ a:link {
     background-color: #1F2937;
     color: #f9faf8;
     font-size:24px;
-    padding: 0 100px;
+    padding: 0 150px;
+}
+
+.logo {
+    flex-shrink: 0;
 }
 
 .header_links {
@@ -44,22 +48,36 @@ a:link {
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 50px 100px;
+    padding: 50px 150px;
     background-color: #1F2937;
-    color:#f9faf8
+    color:#f9faf8;
+    gap:10px;
 }
 
 .left_pane {
     display:flex;
     flex-direction: column;
     justify-content: center; 
-    flex: 0;
+    flex: auto;
     margin-right: 20px;
     gap: 10px;
+    width:400px;
 }
 
 h1, p {
     margin:0;
+}
+
+.heading_mssg {
+    font-weight: 1200;
+    font-size: 44px;
+    width:max-content; 
+    
+}
+.heading_submssg {
+    font-size:18px;
+    color: #e5e7eb;
+    width: 400px;
 }
 
 .main_body {
@@ -81,6 +99,13 @@ h1, p {
     height: 250px;
     margin: 20px 0px;
 }
+
+.random {
+    font-weight: bold;
+    font-size: 26px;
+    color: #1f2937
+}
+
 .square {
     height: 100px;
     width: 100px;
@@ -109,11 +134,23 @@ h1, p {
 
 .body2 {
     display:inline-block;
+    display:flex;
+    justify-content: center;
     text-align: center;
     width:100%;
     padding: 20px 0px;
     background-color: #E5E7EB;
 }
+
+.quote_holder {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    width:max-content;
+}
+
 .quote_text {
     font-size: 24px;
     font-style:italic;
@@ -124,8 +161,9 @@ h1, p {
 
 .quote_author {
     font-size: 18px;
+    padding: 0px 40px;
     font-style: italic;
-    text-align: center;
+    align-self: flex-end;
 }
 
 .banner {
@@ -155,11 +193,24 @@ h1, p {
     border: 2px solid aliceblue;
     border-radius: 6px;
     background-color: #3882f6;
-    width:80px;
-    height: 25px;
+    width:90px;
+    height: 30px;
     color:aliceblue;
     font-family: sans-serif;
-    font-weight: bold
+    font-weight: bold;
+    font-size:14px;
+}
+.signup1 {
+    border: none;
+    border-radius: 6px;
+    background-color: #3882f6;
+    width:90px;
+    height: 30px;
+    color:aliceblue;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    
 }
 
 .footer {
@@ -168,5 +219,5 @@ h1, p {
     align-items: center;
     background-color: #1F2937;
     color:#f9faf8;
-    height: 40px;
+    height: 60px;
 }
